@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Existensce Checks</title>
+</head>
+<!-- Miftah Nur Firdaus -->
+<!-- 3411181069 -->
+<body>
+	<form name="myForm" action="" onsubmit="return validateForm()" method="POST">
+		<input type="text" id="username" name="username">
+		<input type="submit" value="submit">
+	</form>
+	<script type="text/javascript">
+		function validateForm(){
+			var user = document.myForm.username.value;
+			if(user == ""){
+				alert("username tidak boleh kosong");
+				return false;
+			}else{
+				return true;
+			}
+		}
+	
+	</script>
+
+</body>
+</html>
